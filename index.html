@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ig-Post-Bootstrap</title>
+</head>
+<body>
+    <div tag="header" class="container-fluid d-flex">
+      <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+        <div tag="header izquierdo" class="container-fluid d-flex justify-content-start">
+          <i class="fa-brands fa-instagram" id="igicon"></i>
+          <a class="navbar-brand" href="#">Instagram</a>
+        </div>
+        <div tag="header derecho"class="d-flex justify-content-end">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success marginbutton text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create a new post
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                  Caption:
+                  <br>
+                  <textarea name="textarea" rows="10" cols="50" class="textmodal" placeholder="Add the caption of your post here"></textarea>
+                  <div tag="camera y ubi" class="d-flex">
+                    <div class="diviconsize">
+                      <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                    </div>
+                    <div class="diviconsize">
+                      <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="nav-link dropdown-toggle greybutton borderradius whitecolor settingbutton" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item redletter" href="#">Log Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div tag="body" class="container-fluid positionbody">
+      <ul tag="iconos" class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li>
+      </ul>
+      <div tag="contenido" class="tab-content positioncards" id="myTabContent">
+        <div tag="contenido tipo grilla" class="tab-pane fade show active justify-content-center" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div tag="fila 1" class="row">
+            <div class="col-lg-4 imgsizegrilla">
+              <img src="https://fotografias.lasexta.com/clipping/cmsimages01/2022/08/09/3FFA8546-05CE-4608-9B69-6602D02A4C58/cachorro-pomsky_104.jpg?crop=887,887,x296,y0&width=1200&height=1200&optimize=low&format=webply" alt="..." class="imggrilla">
+            </div>
+            <div class="col-lg-4 imgsizegrilla">
+              <img src="https://psicologiamonzo.com/wp-content/uploads/2019/03/multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg" alt="..." class="imggrilla">
+            </div>
+            <div class="col-lg-4 imgsizegrilla">
+              <img src="https://w0.peakpx.com/wallpaper/249/674/HD-wallpaper-sunrise-beautiful-landscapes.jpg" alt="..." class="imggrilla">
+            </div>
+          </div>
+          <div tag="fila 2" class="row">
+            <div class="col-lg-4 imgsizegrilla">
+              <img src="https://www.mendozapost.com/files/image/34/34301/55a62bdd40cec_360_480!.png?s=627e4ae6dbd6fd9fcd52543685bfded0&d=1638239730" alt="" class="imggrilla">
+            </div>
+            <div class="col-lg-4 imgsizegrilla">
+              <img src="https://cnnespanol.cnn.com/wp-content/uploads/2023/03/230310191236-discos-vinilo-superan-ventas-compactos-redaccion-mexico-00000105-full-169.jpg?quality=100&strip=info" alt="" class="imggrilla">
+            </div>
+            <div class="col-lg-4 imgsizegrilla">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/640px-NGC_4414_%28NASA-med%29.jpg" alt="" class="imggrilla">
+            </div>
+          </div>
+          <div tag="fila 3" class="row">
+            <div class="col-lg-4 imgsizegrilla">
+              <img src="https://www.fundaciontelefonica.com/wp-content/uploads/2022/09/portada-dia-programador-2560x950-1.jpg" alt="" class="imggrilla">
+            </div>
+            <div class="col-lg-4 imgsizegrilla">
+              <img src="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/og-images/default.83939b540f40.jpg" alt="" class="imggrilla">
+            </div>
+            <div class="col-lg-4 imgsizegrilla">
+              <img src="https://img.redbull.com/images/c_crop,x_1624,y_0,h_2560,w_2048/c_fill,w_790,h_878/q_auto:low,f_auto/redbullcom/tv/FO-1YSE763FN5N11/fo-1yse763fn5n11-featuremedia" alt="" class="imggrilla">
+            </div>
+          </div>
+        </div>
+        <div tag="contenido tipo celular" class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="card margincardstop imgcel" style="width: 33%;">
+            <div class="d-flex justify-content-between margincardsheader">
+              <div>
+                <h5 class="card-title">My beatiful dog</h5>
+              </div>
+              <div>
+                <p class="textdate">08/26</p>
+              </div>
+            </div>
+            <img src="https://fotografias.lasexta.com/clipping/cmsimages01/2022/08/09/3FFA8546-05CE-4608-9B69-6602D02A4C58/cachorro-pomsky_104.jpg?crop=887,887,x296,y0&width=1200&height=1200&optimize=low&format=webply" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p><strong>186723 Likes</strong></p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card margincardstop imgcel" style="width: 33%;">
+            <div class="d-flex justify-content-between margincardsheader">
+              <div>
+                <h5 class="card-title">A wonderful place on earth</h5>
+              </div>
+              <div>
+                <p class="textdate">04/09</p>
+              </div>
+            </div>
+            <img src="https://w0.peakpx.com/wallpaper/249/674/HD-wallpaper-sunrise-beautiful-landscapes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p><strong>25786 Likes</strong></p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card margincardstop imgcel" style="width: 33%;">
+            <div class="d-flex justify-content-between margincardsheader">
+              <div>
+                <h5 class="card-title">Some science thing</h5>
+              </div>
+              <div>
+                <p class="textdate">06/10</p>
+              </div>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/640px-NGC_4414_%28NASA-med%29.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p><strong>1395 Likes</strong></p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0f2c5571ae.js" crossorigin="anonymous"></script>
+</body>
+</html>

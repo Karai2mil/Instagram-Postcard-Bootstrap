@@ -1,0 +1,89 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+.greybutton {
+    background-color: grey;
+}
+.borderradius {
+    border-radius: 5px;
+}
+.settingbutton {
+    width: 60px;
+    text-align: center;
+}
+.redletter {
+    color: red;
+}
+.whitecolor {
+    color: white;
+}
+.marginbutton {
+    margin-right: 5px;
+}
+#igicon {
+    font-size: 140%;
+    margin-right: 5px;
+}
+.diviconsize {
+    margin: 15px 5px 20px 5px;
+    padding-top: 3px;
+    text-align: center;
+    height: 30px;
+    width: 40px;
+    background: rgba(214, 214, 214, 0.481);
+    border-color: black;
+    border-radius: 5px;
+}
+.iconsquare {
+    font-size: 110%;
+    text-align: center;
+    padding: 5px;
+}
+.textdate{
+    font-size: ;
+}
+.textmodal {
+    color: rgb(137, 136, 136);
+    width: 100%;
+    height: 70px;
+    border: solid;
+    border-radius: 5px;
+    border-color: #c2c1c1;
+    border-width: 2px;
+    margin-top: 7px;
+    text-align: top;
+}
+.heightbody {
+    height: 2000px;
+}
+.marginbody {
+    margin: auto;
+    justify-content: center;
+}
+.margincardsheader {
+    margin: 10px 10px 0px 10px;
+    padding-bottom: 0px;
+}
+.imgcel{
+    margin: auto;
+} 
+.margincardstop {
+    margin-top: 40px;
+}
+.positionbody {
+    position: absolute;
+    margin-top: 10px;
+}
+.positioncards {
+    margin: auto;
+}
+.imgsizegrilla {
+    height: 450px;
+    width: 33.3%;
+    padding: 5px;
+}
+.imggrilla {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
